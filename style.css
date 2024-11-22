@@ -67,7 +67,7 @@ header {
 }
 
 #pasek_nawigacyjny a:hover {
-    background-color: #8d8ebd; /* Hover background color */
+    background-color: grey; /* Hover background color */
     color: rgb(0, 0, 0); /* Hover text color */
     transform: scale(1.1);
 }
