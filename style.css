@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif; /* Add default font */
+    margin: 0; /* Remove default body margins */
+    padding: 0; /* Remove default body padding */
+}
+header {
+    background-color: #16316D;
+    height: 84px; /* Height of the header */
+    display: flex;
+    align-items: center; /* Center icons vertically */
+}
+#logo_cont{
+    width: 80%;
+    text-align: center;
+    margin-left: 370px;
+    margin-top: 13px;
+}
+#logo{
+    width: 230px;
+    margin-left: px;
+    margin-right: 00px;
+}
+#fb,#insta,#tt,#yt{
+    width: 48px;
+    height: 48px;
+}
+#fb:hover,#insta:hover,#tt:hover,#yt:hover{
+    transform: scale(1.1); /* Powiększenie ikonki */
+}
+#insta{
+    border-radius: 50%;
+}
+#ikonki{
+    width: 5%;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+#pasek_nawigacyjny {
+    height: 50px; /* Height of the navigation bar */
+    background-color: #98A2B3;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Evenly space the items */
+    align-items: center; /* Align items vertically */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    box-sizing: border-box; /* Include padding in dimensions */
+}
+
+#pasek_nawigacyjny div {
+    flex: 1; /* Equal spacing for all navigation items */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+}
+
+#pasek_nawigacyjny a {
+    text-decoration: none; /* Remove underline from text */
+    color: black; /* Default text color */
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size */
+    display: inline-block; /* Make links block elements */
+    height: 100%; /* Stretch to fill parent height */
+    width: 100%; /* Stretch to fill parent width */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#pasek_nawigacyjny a:hover {
+    background-color: #090b83; /* Hover background color */
+    color: rgb(0, 0, 0); /* Hover text color */
+    transform: scale(1.1);
+}
+#info{
+    display: flex;
+    flex-direction: row;
+}
+#zdj{
+    width: 0%;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    margin-left: -6px;
+}
+#ludek{
+    width: 270px;
+}
+#text{  
+    width: 60%;
+    text-align: right;
+    line-height: 260px;
+    font-size:40px;
+    margin-top: -20px;
+    margin-left: 190px;
+}
+#nowy_post{
+    background-color: #98A2B3;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+#post_insta,#post_yt{
+    width: 50%;
+    text-align: center;
+    margin-top: 30px ;
+}
+#posty{
+    background-color: #98A2B3;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#film_yt{
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#insta_post{
+    width: 50%; 
+}
+footer {
+    background-color: #16316D;
+    height: 50px;
+    margin-top: 20px;
+}
