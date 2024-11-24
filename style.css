@@ -67,8 +67,8 @@ header {
 }
 
 #pasek_nawigacyjny a:hover {
-    background-color: grey; /* Hover background color */
-    color: rgb(0, 0, 0); /* Hover text color */
+    background-color: #667085; /* Hover background color */
+    color: white; /* Hover text color */
     transform: scale(1.1);
 }
 #info{
@@ -95,32 +95,92 @@ header {
 }
 #nowy_post{
     background-color: #98A2B3;
-    height: 150px;
+    height: 850px;
     display: flex;
     flex-direction: row;
-}
-#post_insta,#post_yt{
-    width: 50%;
     text-align: center;
-    margin-top: 30px ;
 }
-#posty{
-    background-color: #98A2B3;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#film_yt{
+#post_yt{
     width: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: center;
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin-left: 100px;
+    margin-right: 280px;
 }
-#insta_post{
+iframe {
+    margin-top: 100px;
+    width: 100%;      
+    height: 450px;    
+    border: none; 
+}
+#post_insta{
     width: 50%; 
+    margin-left: 20px;
+}
+#post_insta h1{
+    margin-left: -165px;
+}
+.instagram-media {
+    max-width: 400px;
+    max-height: 700px;
+    height: 700px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+#text_bott {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 670px;
+}
+
+.box {
+    width: 580px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+hr {
+    width: 580px;
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
 }
 footer {
     background-color: #16316D;
     height: 50px;
-    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+footer h3{
+    padding: 13px;
 }
