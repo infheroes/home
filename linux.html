@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>INF HEROES</title>
+    <style>
+        .sussy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 33.333%;
+            display: flex;
+            justify-content: space-around;
+            align-items: relative;
+            flex-direction: column;
+            padding: 10px;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-description {
+            position: absolute;
+            bottom: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 90%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .carousel-item:hover .carousel-description {
+            opacity: 1;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .carousel-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo_cont"><img src="drawn_center.png" alt="Logo" id="logo"></a>
+        <a href="https://www.facebook.com/people/Infheroes/61565034788943/?sk=about_contact_and_basic_info" id="ikonki"><img src="Facebook-logo.png" alt="Facebook" id="fb"></a>
+        <a href="" id="ikonki"><img src="instagram-logo.svg" alt="Instagram" id="insta"></a>
+        <a href="https://www.tiktok.com/@infheroes" id="ikonki"><img src="tiktok-logo.png" alt="TikTok" id="tt"></a>
+        <a href="https://www.youtube.com/@Infheroes" id="ikonki"><img src="youtube-logo-.png" alt="YouTube" id="yt"></a>
+    </header>
+    <div id="pasek_nawigacyjny">
+        <div id="kafelek"></div>
+        <div><a href="linux.html" id="kafelek">Linux</a></div>
+        <div><a href="" id="kafelek">Windows</a></div>
+        <div><a href="" id="kafelek">Urządzenia sieciowe</a></div>
+        <div><a href="" id="kafelek">Inne Materiały</a></div>
+        <div><a href="" id="kafelek">Blog</a></div>
+        <div id="kafelek"></div>
+    </div>
+    <div id="sussy">
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                <div class="carousel-description">Description for Video 1</div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                <div class="carousel-description">Description for Video 2</div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+                <div class="carousel-description">Description for Video 3</div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
+                <div class="carousel-description">Description for Video 4</div>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" allowfullscreen></iframe>
+                <div class="carousel-description">Description for Video 5</div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-button" id="prevButton">❮</button>
+            <button class="carousel-button" id="nextButton">❯</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js">
+    </script>
+    <footer><h3>&copy; 2024 INFHEROES</h3></footer>
+    <!-- credits: Designer: Hubert Matysiak, Graphics: Igor Filipek, Web creator: Michał Okoń -->
+</body>
+</html>
