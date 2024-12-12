@@ -9,16 +9,20 @@ header {
     display: flex;
     align-items: center; /* Center icons vertically */
 }
+#hlogo{
+    width: 60%;
+    margin-left: 42.5%;
+}
+#hikonki{
+    width: 10%;
+}
 #logo_cont{
-    width: 80%;
+    width: 100%;
     text-align: center;
-    margin-left: 370px;
-    margin-top: 13px;
 }
 #logo{
-    width: 230px;
-    margin-left: px;
-    margin-right: 00px;
+    margin-top: 15px;
+    width: 40%;
 }
 #fb,#insta,#tt,#yt{
     width: 48px;
@@ -30,20 +34,15 @@ header {
 #insta{
     border-radius: 50%;
 }
-#ikonki{
-    width: 5%;
-    margin-left: 16px;
-    margin-right: 16px;
-}
 #pasek_nawigacyjny {
     height: 50px; /* Height of the navigation bar */
     background-color: #98A2B3;
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Evenly space the items */
     align-items: center; /* Align items vertically */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
     box-sizing: border-box; /* Include padding in dimensions */
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #pasek_nawigacyjny div {
@@ -52,7 +51,6 @@ header {
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
 }
-
 #pasek_nawigacyjny a {
     text-decoration: none; /* Remove underline from text */
     color: black; /* Default text color */
@@ -65,68 +63,42 @@ header {
     line-height: 50px; /* Center text vertically */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 #pasek_nawigacyjny a:hover {
     background-color: #667085; /* Hover background color */
     color: white; /* Hover text color */
     transform: scale(1.1);
 }
-#info{
-    display: flex;
-    flex-direction: row;
-}
-#zdj{
-    width: 0%;
-    text-align: left;
-    margin-top: 25px;
-    margin-bottom: 60px;
-    margin-left: -6px;
-}
-#ludek{
-    width: 270px;
-}
-#text{  
-    width: 60%;
-    text-align: right;
-    line-height: 260px;
-    font-size:40px;
-    margin-top: -20px;
-    margin-left: 190px;
+#baner{
+    width: auto;
 }
 #nowy_post{
     background-color: #98A2B3;
-    height: 850px;
-    display: flex;
-    flex-direction: row;
+}
+table{
+    width: 100%;
+}
+#nowy_post_txt {
+    width: 50%;
     text-align: center;
 }
-#post_yt{
+#nowy_post_yt {
     width: 50%;
-    justify-content: center;
-    max-width: 800px; /* Maksymalna szerokość kontenera */
-    margin-left: 100px;
-    margin-right: 280px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;    
+}
+#nowy_post_ig {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 5%;
+    text-align: center;
 }
 iframe {
-    margin-top: 100px;
     width: 100%;      
-    height: 450px;    
-    border: none; 
-}
-#post_insta{
-    width: 50%; 
-    margin-left: 20px;
-}
-#post_insta h1{
-    margin-left: -165px;
+    height: 450px;
 }
 .instagram-media {
-    max-width: 400px;
-    max-height: 700px;
     height: 700px;
-    border: 0;
-    border-radius: 3px;
-    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
 }
 #text_bott {
     font-size: 2rem;
@@ -184,3 +156,126 @@ footer {
 footer h3{
     padding: 13px;
 }
+@media (max-width: 1200px) {
+    
+}
+
+/* Ekrany poniżej 768px (Tablety w pionie i większe smartfony) */
+@media (max-width: 768px) {
+    
+}
+
+/* Ekrany poniżej 480px (Smartfony) */
+@media (max-width: 480px) {
+    header {
+        height: 84px; /* Height of the header */
+        width: 185%;
+    }
+    #hlogo{
+        width: 60%;
+        margin-left: 37.5%;
+    }
+    #hikonki{
+        width: 10%;
+    }
+    #logo_cont{
+        width: 100%;
+    }
+    #logo{
+        width: 80%;
+    }
+    #fb,#insta,#tt,#yt{
+        width: 44px;
+        height: 44px;
+    }
+    #pasek_nawigacyjny {
+        height: 50px; /* Height of the navigation bar */
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 185%;
+    }
+    #pasek_nawigacyjny a {
+        font-size: 17px; /* Adjust font size */
+        height: 100%; /* Stretch to fill parent height */
+        width: 100%; /* Stretch to fill parent width */
+    }
+    #baner{
+        width: 180%;
+    }
+    #nowy_post{
+        width: 185%;
+    }
+    table{
+        width: 100%;
+    }
+    #nowy_post_txt {
+        width: 50%;
+    }
+    #nowy_post_ig {
+        padding-left: 5%;
+    }
+    iframe {
+        width: 100%;      
+        height: 280px;
+    }
+    .instagram-media {
+        height: 500px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    #text_bott {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .feature {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 670px;
+    }
+    
+    .box {
+        width: 580px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-top: 0px;
+    }
+    
+    hr {
+        width: 580px;
+        border: none;
+        border-top: 1px solid #000;
+        margin: 10px 0;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.5;
+    }
+    footer {
+        background-color: #16316D;
+        height: 50px;
+        color: white;
+        text-align: center;
+        width: 185%;
+    }
+    footer h3{
+        padding: 13px;
+    }
+    }
