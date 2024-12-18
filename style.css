@@ -11,7 +11,7 @@ header {
 }
 #hlogo{
     width: 60%;
-    margin-left: 42.5%;
+    margin-left: 43%;
 }
 #hikonki{
     width: 10%;
@@ -74,6 +74,12 @@ header {
 #baner{
     width: 90%;
 }
+#linux_banner{
+    width: 55%;
+}
+#windows_banner{
+    width: 66%;
+}
 #nowy_post{
     background-color: #98A2B3;
 }
@@ -107,7 +113,7 @@ iframe {
     height: 450px;
 }
 .instagram-media {
-    height: 650px;
+    height: 700px;
 }
 #container_alternative{
     display: none;
@@ -214,9 +220,7 @@ footer h3{
 }
 #carousel_div{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 725px;
 }
 .carousel {
     position: relative;
@@ -245,6 +249,10 @@ footer h3{
     position: relative;
     box-sizing: border-box;
 }
+.carousel-item iframe{
+    height: 390px;
+}
+
 @media (max-width: 1200px) {
     header {
         height: 80px; /* Height of the header */
@@ -477,7 +485,6 @@ footer h3{
     
     .box {
         width: 70%;             /* Dostosuj szerokość boxa */
-        height: %;
     }
     
     h2 {
